@@ -2,7 +2,8 @@
 // Connect wiring as follows https://www.circuitbasics.com/how-to-set-up-buttons-and-switches-on-the-raspberry-pi/ 
 // Use a 1k Ohm resistor for the pull-up resistor for the toggle switch circuit 
 // Use a 220 Ohm resistor for the LED 
-
+// Rocker on/off switch (basic toggle switch) from Amazon
+// https://www.amazon.com/gp/product/B07XC5KB8D/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1 
 
 // Wiring for the LED: 
 // Connect 220 ohm resitor to the side of the LED which is longer, and then into pin 9
