@@ -1,0 +1,46 @@
+//Setup notes For Arduino Code: 
+// Connect wiring as follows https://www.circuitbasics.com/how-to-set-up-buttons-and-switches-on-the-raspberry-pi/ 
+// Use a 1k Ohm resistor for the pull-up resistor for the toggle switch circuit 
+// Use a 220 Ohm resistor for the LED 
+
+
+// Wiring for the LED: 
+// Connect 220 ohm resitor to the side of the LED which is longer, and then into pin 9
+// Connect the other side of the LED (shorter side) to GND 
+
+// Wiring for the Toggle Switch (includes pullup resistor): 
+// Connect the black/GND side of the Toggle switch to pin 2 
+// Connect the other (red) side of the Toggle switch to a splitter 
+// One side of the splitter goes to 5V 
+// The other side of the splitter goes to 1k Ohm resistor and then to GND 
+
+const int pinSwitch = 2; 
+const int pinLed =  9; 
+int buttonState = 0; //variable for reading the pushbutton status 
+
+void setup() {
+  // put your setup code here, to run once:
+  
+  pinMode(pinLed, OUTPUT);
+  digitalWrite(pinLed, LOW);
+  pinMode(pinSwitch, INPUT);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+   buttonState = digitalRead(pinSwitch);
+
+   if (buttonState == LOW) 
+   {
+    digitalWrite(pinLed, HIGH);
+    }
+
+   else 
+  {
+   digitalWrite(pinLed, LOW);
+    }
+
+  
+}
