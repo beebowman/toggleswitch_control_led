@@ -12,7 +12,7 @@
 // Wiring for the Toggle Switch (includes pullup resistor): 
 // Connect the black/GND side of the Toggle switch to pin 2 
 // Connect the other (red) side of the Toggle switch to a splitter 
-// One side of the splitter goes to 5V 
+// One side of the splitter goes to 5V OR to 3.3V (either works) 
 // The other side of the splitter goes to 1k Ohm resistor and then to GND 
 
 const int pinSwitch = 2; 
