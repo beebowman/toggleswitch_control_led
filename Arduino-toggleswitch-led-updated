@@ -1,0 +1,36 @@
+
+//By: Bo Bowman
+
+//Connect wiring as follows: 
+//See here for wiring diagram: https://create.arduino.cc/projecthub/GeneralSpud/toggle-switch-3763a2 
+//Connect switch pin to 3 (instead of pin 4 from the above url) 
+//Connect led pin to 9 (instead of pin 5 from the above url) 
+//Use a 220 Ohm resistor for the LED
+//Use a 1k Ohm resistor for the toggle switch 
+
+// Rocker on/off switch (basic toggle switch) from Amazon
+// https://www.amazon.com/gp/product/B07XC5KB8D/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1 
+
+
+int switch_pin = 3; 
+int led_pin = 9; 
+
+void setup() {
+  // put your setup code here, to run once:
+
+  pinMode(switch_pin, INPUT);
+  pinMode(led_pin,OUTPUT);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+  if (digitalRead(switch_pin) == HIGH){
+    digitalWrite(led_pin,LOW);
+    
+  }
+  if (digitalRead(switch_pin)==LOW){
+    digitalWrite(led_pin,HIGH);
+  }
+}
