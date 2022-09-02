@@ -1,3 +1,5 @@
+//had some issues with this code. Maybe swtich pin 2 to pin 3 instead? Or refer to my other codes 
+
 //Setup notes For Arduino Code: 
 // Connect wiring as follows https://www.circuitbasics.com/how-to-set-up-buttons-and-switches-on-the-raspberry-pi/ 
 // Use a 1k Ohm resistor for the pull-up resistor for the toggle switch circuit 
